@@ -6,84 +6,75 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="287dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <Button
-        android:id="@+id/button"
-        android:layout_width="102dp"
+        android:id="@+id/btnAbout"
+        android:layout_width="83dp"
         android:layout_height="39dp"
-        android:layout_marginTop="12dp"
-        android:text="Account"
-        app:layout_constraintStart_toEndOf="@+id/searchView"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ScrollView
-        android:layout_width="383dp"
-        android:layout_height="580dp"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="103dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="78dp"
-        android:layout_height="47dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Place"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="58dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="81dp"
-        android:layout_height="45dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Address"
-        tools:layout_editor_absoluteX="93dp"
-        tools:layout_editor_absoluteY="58dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="70dp"
-        android:layout_height="45dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Tags"
-        tools:layout_editor_absoluteX="174dp"
-        tools:layout_editor_absoluteY="58dp" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName4"
-        android:layout_width="152dp"
-        android:layout_height="45dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Completed"
-        tools:layout_editor_absoluteX="244dp"
-        tools:layout_editor_absoluteY="57dp" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="88dp"
-        android:layout_height="46dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="about"
         android:text="About"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="181dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginEnd="115dp"
+        android:text="List"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMap" />
+
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_width="181dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginEnd="115dp"
+        android:text="Map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAccount" />
+
+    <Button
+        android:id="@+id/btnAccount"
+        android:layout_width="181dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="115dp"
+        android:onClick="account"
+        android:text="Account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="181dp"
+        android:layout_height="187dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="115dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_placeholder" />
+
+    <TextView
+        android:id="@+id/txtAboutTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginStart="177dp"
+        android:layout_marginEnd="177dp"
+        android:gravity="center"
+        android:text="Scavenger Hunt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
