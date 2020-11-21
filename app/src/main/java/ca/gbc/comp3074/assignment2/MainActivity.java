@@ -23,4 +23,13 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AccountView.class);
         startActivity(intent);
     }
+
+    public void list(View view) {
+        Intent intent = new Intent(this, ListView.class);
+        startActivity(intent);
+    }
+    public void map(View view) {
+        Intent intent = new Intent(this, MapsMarkerActivity.class);
+        startActivity(intent);
+    }
 }
