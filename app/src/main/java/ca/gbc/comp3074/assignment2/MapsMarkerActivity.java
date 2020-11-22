@@ -1,6 +1,6 @@
 package ca.gbc.comp3074.assignment2;
 
-
+import androidx.fragment.app.FragmentActivity;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,8 +14,9 @@ import com.google.android.gms.maps.model.MarkerOptions;
 /**
  * An activity that displays a Google map with a marker (pin) to indicate a particular location.
  */
-public class MapsMarkerActivity extends AppCompatActivity
+public class MapsMarkerActivity extends FragmentActivity
         implements OnMapReadyCallback {
+    private GoogleMap mMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +26,7 @@ public class MapsMarkerActivity extends AppCompatActivity
         // Get the SupportMapFragment and request notification
         // when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
-                .findFragmentById(R.id.map);
+                .findFragmentById(R.id.mapView);
         mapFragment.getMapAsync(this);
     }
 
@@ -40,12 +41,11 @@ public class MapsMarkerActivity extends AppCompatActivity
      */
     @Override
     public void onMapReady(GoogleMap googleMap) {
+        mMap = googleMap;
         // Add a marker in Sydney, Australia,
         // and move the map's camera to the same location.
         LatLng sydney = new LatLng(-33.852, 151.211);
-        googleMap.addMarker(new MarkerOptions()
-                .position(sydney)
-                .title("Marker in Sydney"));
-        googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        mMap.addMarker(new MarkerOptions().position(sydney).title("Hre is the start point"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
     }
 }
