@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Assignment2</string>
-    <string name="google_maps_key" translatable="false">AIzaSyAQGgeJD49vzGKwI605JI6huqF8QTZCJCY</string>
+    <string name="map_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDtnj9idn0ogPL1vny9y2F3stBR8bgkCIw</string>
+    <string name="gitH"><a href="https://github.com/ZacShaw/Mobile_Group_Project.git">Click Our GitHub Project</a></string>
+
+
 </resources>

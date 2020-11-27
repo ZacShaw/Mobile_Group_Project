@@ -2,7 +2,6 @@ package ca.gbc.comp3074.assignment2;
 
 import androidx.fragment.app.FragmentActivity;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -14,9 +13,9 @@ import com.google.android.gms.maps.model.MarkerOptions;
 /**
  * An activity that displays a Google map with a marker (pin) to indicate a particular location.
  */
-public class MapsMarkerActivity extends FragmentActivity
-        implements OnMapReadyCallback {
+public class MapsMarkerActivity extends FragmentActivity implements OnMapReadyCallback {
     private GoogleMap mMap;
+    SupportMapFragment mapFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +24,7 @@ public class MapsMarkerActivity extends FragmentActivity
         setContentView(R.layout.activity_maps);
         // Get the SupportMapFragment and request notification
         // when the map is ready to be used.
-        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
+        mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.mapView);
         mapFragment.getMapAsync(this);
     }
