@@ -32,4 +32,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MapsMarkerActivity.class);
         startActivity(intent);
     }
+    public void introduction(View view) {
+        Intent intent = new Intent(this, introductionGame.class);
+        startActivity(intent);
+    }
 }

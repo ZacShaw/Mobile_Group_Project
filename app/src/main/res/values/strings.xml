@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Assignment2</string>
+    <string name="app_name">Field Game</string>
     <string name="map_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDtnj9idn0ogPL1vny9y2F3stBR8bgkCIw</string>
     <string name="gitH"><a href="https://github.com/ZacShaw/Mobile_Group_Project.git">Click Our GitHub Project</a></string>
 
