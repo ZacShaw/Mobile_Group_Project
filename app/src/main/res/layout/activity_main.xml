@@ -13,11 +13,13 @@
         android:layout_marginStart="115dp"
         android:layout_marginEnd="115dp"
         android:onClick="introduction"
-        android:text="introduction"
+        android:text="info"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnList" />
+        app:layout_constraintTop_toBottomOf="@+id/btnList"
+        app:icon="@drawable/ic_info"
+        style="@style/Widget.MaterialComponents.Button.Icon"/>
 
 
     <Button
@@ -30,7 +32,9 @@
         android:text="List"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMap" />
+        app:layout_constraintTop_toBottomOf="@+id/btnMap"
+        app:icon="@drawable/ic_list"
+        style="@style/Widget.MaterialComponents.Button.Icon"/>
 
     <Button
         android:id="@+id/btnMap"
@@ -42,7 +46,9 @@
         android:text="Map"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAccount" />
+        app:layout_constraintTop_toBottomOf="@+id/btnAccount"
+        app:icon="@drawable/ic_map"
+        style="@style/Widget.MaterialComponents.Button.Icon"/>
 
     <Button
         android:id="@+id/btnAccount"
@@ -55,7 +61,10 @@
         android:text="Account"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:icon="@drawable/ic_add"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        />
 
     <ImageView
         android:id="@+id/imageView"
@@ -77,7 +86,8 @@
         android:text="About"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnInt" />
+        app:layout_constraintTop_toBottomOf="@+id/btnInt"
+        style="?attr/materialButtonOutlinedStyle"/>
 
     <TextView
         android:id="@+id/txtAboutTitle"
@@ -86,10 +96,16 @@
         android:layout_marginStart="177dp"
         android:layout_marginEnd="177dp"
         android:gravity="center"
-        android:text="Scavenger Hunt"
+        android:text="Field Game"
+        android:textColor="#288E12"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:shadowColor="#215505"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -100,7 +116,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            app:itemBackground="@color/design_default_color_error"
+            app:itemBackground="@color/darGreenn"
             app:itemIconTint="@android:color/white"
             app:itemTextColor="@android:color/white"
             app:menu="@menu/nav_menu" />

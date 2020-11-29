@@ -43,6 +43,10 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
+
+
     public void about(View view) {
         Intent intent = new Intent(this, AboutView.class);
         startActivity(intent);
