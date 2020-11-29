@@ -9,18 +9,39 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+
 public class MainActivity extends AppCompatActivity {
-    private BottomNavigationView bottomNavigationView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.menuNav:
+                        Toast.makeText(MainActivity.this, "Implementing Menu Text", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.navLac:
+                        Toast.makeText(MainActivity.this, "Location Find is Loading", Toast.LENGTH_SHORT).show();
+                        break;
+                    case R.id.conTact:
+                        setContentView(R.layout.activity_about);
 
+                }
+                return true;
+            }
+        });
     }
+
+
 
     public void about(View view) {
         Intent intent = new Intent(this, AboutView.class);
