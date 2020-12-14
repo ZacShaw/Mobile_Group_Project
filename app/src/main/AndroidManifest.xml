@@ -57,6 +57,11 @@
                 android:value=".MainActivity" />
         </activity>
 
+        <activity
+            android:name=".AddTask"
+            android:parentActivityName=".ListView">
+        </activity>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
