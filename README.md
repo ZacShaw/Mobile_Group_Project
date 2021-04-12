@@ -1,6 +1,6 @@
 # Mobile_Group_Project
 <h2 align="center">Restaurant Guide.👋</h2>
-<p align="center"> 📌  SWIFT XCODE </p>
+<p align="center"> 📌 React Native </p>
 
 ![ban](https://i.ibb.co/jTYFdLy/fildgame.png)
 
